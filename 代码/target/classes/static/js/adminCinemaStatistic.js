@@ -1,3 +1,8 @@
+/**
+ * @author 蔡明卫
+ * @date 5/12
+ */
+
 $(document).ready(function() {
 
 
@@ -206,6 +211,7 @@ $(document).ready(function() {
     '/statistics/popular/movie?days=5&movieNum=5',
     function(res){
     var data = res.content || [];
+    console.log(data)
     var tableData = data.map(function (item) {
         return item.boxoffice;
     });

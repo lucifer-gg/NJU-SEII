@@ -66,4 +66,8 @@ public interface AccountService {
      */
     ResponseVO deleteUser(int id);
 
+    ResponseVO getNamebyId(int id);
+
+    ResponseVO getVipConsumeforUseHome();//首页获取冲销记录
+
 }
